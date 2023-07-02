@@ -1,0 +1,40 @@
+body {
+    padding: 0;
+    margin: 0;
+}
+
+
+.toolbar {
+    display: flex;
+    justify-content: space-between;
+    color: #000;
+    background-color: #ffff;
+}
+
+.text-field {
+    width: 300px;
+}
+
+button {
+    display: flex;
+    align-items: center;
+    border-radius: 20px;
+    border: 1px solid #000;
+    height: 35px;
+}
+
+button:hover {
+
+    background-color: #c5c2c2;
+}
+
+.filter {
+    width: 80px;
+    text-align: center;
+    border: 1px solid #000;
+    margin-right: 10px;
+    border-radius: 20px;
+}
+.filterInput{
+    border-radius: 20px;
+}
