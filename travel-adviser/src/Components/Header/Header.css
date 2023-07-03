@@ -35,6 +35,8 @@ button:hover {
     margin-right: 10px;
     border-radius: 20px;
 }
-.filterInput{
+
+.type {
     border-radius: 20px;
+    color: #000;
 }

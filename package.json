@@ -1,0 +1,10 @@
+{
+  "dependencies": {
+    "@geoman-io/leaflet-geoman-free": "^2.14.2",
+    "dotenv": "^16.3.1",
+    "leaflet": "^1.9.4",
+    "react-leaflet": "^4.2.1",
+    "react-leaflet-geosearch": "^0.3.4",
+    "react-places-autocomplete": "^7.3.0"
+  }
+}
