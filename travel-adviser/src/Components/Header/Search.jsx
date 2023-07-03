@@ -72,7 +72,7 @@ const Search = ({ setCoordinates }) => {
           top: "100%",
           left: 375,
           width: "100%",
-          maxWidth: 500,
+          maxWidth: 700,
           maxHeight: 200,
           overflow: "auto",
           backgroundColor: "#fff",
