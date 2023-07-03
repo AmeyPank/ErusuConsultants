@@ -4,15 +4,13 @@ body {
 }
 
 
+
 .toolbar {
     display: flex;
     justify-content: space-between;
     color: #000;
     background-color: #ffff;
-}
 
-.text-field {
-    width: 300px;
 }
 
 button {
@@ -23,20 +21,36 @@ button {
     height: 35px;
 }
 
-button:hover {
 
-    background-color: #c5c2c2;
-}
 
 .filter {
-    width: 80px;
     text-align: center;
-    border: 1px solid #000;
-    margin-right: 10px;
-    border-radius: 20px;
+    padding-top: 8px;
+
 }
 
-.type {
-    border-radius: 20px;
-    color: #000;
+.custom-select {
+    background-color: #f2f2f2;
+    color: #333;
+    padding: 8px;
+    width: 200px;
+    border-radius: 4px;
+    border: none;
+    appearance: none;
 }
+
+.custom-select:focus {
+    outline: none;
+    box-shadow: 0 0 0 5px lightblue;
+}
+
+.custom-select {
+    appearance: none;
+    background-color: #f2f2f2;
+    border-radius: 4px;
+    border: none;
+    color: #333;
+    padding: 8px;
+    width: 100%;
+}
+

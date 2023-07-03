@@ -9,7 +9,7 @@ import {
 import SearchIcon from "@mui/icons-material/Search";
 import axios from "axios";
 import "./Header.css";
-const Search = ({setCoordinates }) => {
+const Search = ({ setCoordinates }) => {
   const [searchValue, setSearchValue] = useState("");
   const [suggestions, setSuggestions] = useState([]);
   const searchRef = useRef(null);
@@ -102,7 +102,7 @@ const Search = ({setCoordinates }) => {
         onChange={handleInputChange}
         InputProps={{
           startAdornment: (
-            <IconButton size="small" edge="start">
+            <IconButton size="small" edge="start" disabled>
               <SearchIcon />
             </IconButton>
           ),
@@ -110,9 +110,9 @@ const Search = ({setCoordinates }) => {
         sx={{
           "& .MuiOutlinedInput-root": {
             borderRadius: "30px",
-            width: "500px",
+            width: "700px",
             height: "40px",
-            boxShadow: 1,
+            boxShadow: 3,
           },
         }}
       />

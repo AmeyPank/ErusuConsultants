@@ -38,7 +38,7 @@ const MapComponent = ({ setCoordinates, coordinates, setBounds, places }) => {
 
     useEffect(() => {
       if (map && coordinates.lat !== 0 && coordinates.lng !== 0) {
-        map.setView(coordinates, 10);
+        map.setView(coordinates, 13);
       }
     }, [map, coordinates]);
 
