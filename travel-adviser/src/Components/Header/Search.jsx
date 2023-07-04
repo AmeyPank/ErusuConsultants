@@ -75,7 +75,7 @@ const Search = ({ setCoordinates }) => {
 
           left: matches ? "auto" : 0,
           right: matches ? "auto" : 0,
-          width: matches ? "400px" : "100%",
+          width: matches ? "390px" : "100%",
           maxHeight: 200,
           overflow: "auto",
           alignItems: "center",
@@ -115,7 +115,7 @@ const Search = ({ setCoordinates }) => {
         sx={{
           "& .MuiOutlinedInput-root": {
             borderRadius: "30px",
-            width: matches ? "400px" : "100%",
+            width: matches ? "390px" : "100%",
             height: "40px",
             boxShadow: 3,
           },
