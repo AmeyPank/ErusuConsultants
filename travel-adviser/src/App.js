@@ -6859,9 +6859,9 @@ function App() {
       />
       <Grid container spacing={1} style={{ width: "100%" }}>
         <Grid item xs={12} md={6}>
-          <List places={places} />
+          <List places={places} type={type} setType={setType} />
         </Grid>
-        <Grid item xs={12} md={6}>
+        <Grid spacing={1} item xs={12} md={6}>
           {coordinates.lat !== 0 && (
             <MapComponent
               setBounds={setBounds}
