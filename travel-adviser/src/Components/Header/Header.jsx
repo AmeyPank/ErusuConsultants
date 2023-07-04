@@ -57,7 +57,7 @@ const Header = ({ setCoordinates, type, setType }) => {
                 height: "45px",
                 width: "150px",
               }}
-              className="custom-select" // Add a custom class name
+              className="custom-select" // Added a custom class name
             >
               <MenuItem value="restaurants">Restaurants</MenuItem>
               <MenuItem value="hotels">Hotels</MenuItem>

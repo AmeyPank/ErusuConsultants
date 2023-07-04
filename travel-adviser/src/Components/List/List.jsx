@@ -3,7 +3,6 @@ import { Box, Grid, MenuItem, Select, Typography } from "@mui/material";
 import PlaceDetails from "../PlaceDetails/PlaceDetails";
 import InfoOutlinedIcon from "@mui/icons-material/InfoOutlined";
 import SliderComponent from "../Slider/SliderComponent";
-import "./List.css";
 import useMediaQuery from "@mui/material/useMediaQuery";
 const List = ({ type, setType, places }) => {
   // console.log(places);
