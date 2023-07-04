@@ -6,6 +6,7 @@ import {
   ListItem,
   ListItemText,
 } from "@mui/material";
+import useMediaQuery from "@mui/material/useMediaQuery";
 import SearchIcon from "@mui/icons-material/Search";
 import axios from "axios";
 import "./Header.css";
@@ -13,7 +14,8 @@ const Search = ({ setCoordinates }) => {
   const [searchValue, setSearchValue] = useState("");
   const [suggestions, setSuggestions] = useState([]);
   const searchRef = useRef(null);
-
+  const matches = useMediaQuery("(max-width: 600px)");
+  
   useEffect(() => {
     const fetchSuggestions = async () => {
       if (searchValue.trim() === "") {
@@ -70,11 +72,13 @@ const Search = ({ setCoordinates }) => {
         sx={{
           position: "absolute",
           top: "100%",
-          left: 375,
-          width: "100%",
-          maxWidth: 700,
+
+          left: matches ? "auto" : 0,
+          right: matches ? "auto" : 0,
+          width: matches ? "400px" : "100%",
           maxHeight: 200,
           overflow: "auto",
+          alignItems: "center",
           backgroundColor: "#fff",
           boxShadow: 1,
           zIndex: 9999,
@@ -99,6 +103,7 @@ const Search = ({ setCoordinates }) => {
         variant="outlined"
         placeholder="Where to?"
         value={searchValue}
+        width={700}
         onChange={handleInputChange}
         InputProps={{
           startAdornment: (
@@ -110,7 +115,7 @@ const Search = ({ setCoordinates }) => {
         sx={{
           "& .MuiOutlinedInput-root": {
             borderRadius: "30px",
-            width: "700px",
+            width: matches ? "400px" : "100%",
             height: "40px",
             boxShadow: 3,
           },
